@@ -15,7 +15,6 @@ from openai import OpenAI
 import re
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
-import json
 import numpy as np
 from rich import print
 from ast import literal_eval
@@ -164,7 +163,7 @@ class Design(QMainWindow):
 
         global client
         response = client.chat.completions.create(
-            model="gpt-4-turbo",
+            model="gpt-4o",
             temperature=0,
             messages=[
                 {
@@ -202,7 +201,7 @@ class Design(QMainWindow):
             Stay concise with your answer, replying specifically to the input prompt without mentioning additional information provided in the context content.
         '''
 
-        model="gpt-4-turbo"
+        model="gpt-4o"
 
         def search_content(df, input_text, top_k):
             embedded_value = self.get_embeddings(input_text)

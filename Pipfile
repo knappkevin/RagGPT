@@ -6,6 +6,13 @@ name = "pypi"
 [packages]
 pdf2image = "*"
 "pdfminer.six" = "*"
+tqdm = "*"
+openai = "*"
+pandas = "*"
+scikit-learn = "*"
+numpy = "*"
+rich = "*"
+pyqt5 = "*"
 
 [dev-packages]
 
